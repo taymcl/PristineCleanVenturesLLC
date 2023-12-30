@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Make accessible for different devices
+const viewportMetaTag = document.createElement('meta');
+viewportMetaTag.name = 'viewport';
+viewportMetaTag.content = 'width=device-width, initial-scale=1.0';
+document.head.appendChild(viewportMetaTag);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
