@@ -1,14 +1,16 @@
 .header {
-  background-color: #2C1D6C;
+  background: linear-gradient(to bottom, #2C1D6C, #B9BFFF 100%);
   padding: 40px;
   color: #fff;
   text-align: center;
   font-family: 'Raleway', serif;
+  font-size: 60px;
 }
 
 .name {
   opacity: 0;
   transition: opacity 2s ease-in-out;
+  font-size: 60px;
 }
 
 .name.fade-in {
@@ -17,8 +19,8 @@
 
 
 .navBar {
-  background-color: #B9BFFF;
-  padding: 10px;
+  background: linear-gradient(to bottom, #B9BFFF, #fff);
+  padding: 20px;
   color: #fff;
   font-size: 40px;
 }
@@ -43,9 +45,9 @@
 }
 
 .navbar-nav a {
-  color: #fff;
+  color: #886BC6;
   font-family: 'Raleway', bold, serif;
-  text-decoration: none;
+  font-weight: bolder;
 }
 
 .navbar-nav a:hover {

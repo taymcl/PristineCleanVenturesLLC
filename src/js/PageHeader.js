@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import './PageHeader.css'; // Import the CSS file
+import '../css/PageHeader.css'; // Import the CSS file
 
 const PageHeader = () => {
   useEffect(() => {
@@ -19,13 +19,13 @@ const PageHeader = () => {
               {/* Remove the "mx-auto" class from the navbar-nav */}
               <ul className="navbar-nav w-100 d-flex justify-content-between">
                 <li className="col-md-4">
-                  <a href="#home" className="nav-link">Home</a>
+                  <a href="/" className="nav-link">Home</a>
                 </li>
                 <li className="col-md-4">
-                  <a href="#about" className="nav-link">About</a>
+                  <a href="/about" className="nav-link">About</a>
                 </li>
                 <li className="col-md-4">
-                  <a href="#contact" className="nav-link">Contact</a>
+                  <a href="/contact" className="nav-link">Contact</a>
                 </li>
               </ul>
             </nav>
