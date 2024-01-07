@@ -1,7 +1,7 @@
 .header {
-  background: linear-gradient(to bottom, #2C1D6C, #B9BFFF 100%);
+  background: linear-gradient(to bottom, #466086, #B9BFFF 100%);
   padding: 40px;
-  color: #fff;
+  color: #141443;
   text-align: center;
   font-family: 'Raleway', serif;
   font-size: 60px;
@@ -17,10 +17,34 @@
   opacity: 1;
 }
 
+.slogan {
+  opacity: 0;
+  transition: opacity 5s ease-in-out;
+  font-style: italic;
+}
+
+.slogan.fade-in {
+  opacity: 1;
+}
+
+.logo {
+  padding-top: 10px;
+  margin-bottom: -30px;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.logo.fade-in {
+  opacity: 1;
+}
+
+.logo img {
+  width: 100px;
+}
+
 
 .navBar {
   background: linear-gradient(to bottom, #B9BFFF, #fff);
-  padding: 20px;
   color: #fff;
   font-size: 40px;
 }
@@ -45,11 +69,11 @@
 }
 
 .navbar-nav a {
-  color: #886BC6;
+  color: #141443;
   font-family: 'Raleway', bold, serif;
   font-weight: bolder;
 }
 
 .navbar-nav a:hover {
-  color: #4066E0; /* Set the hover color */
+  color: #30bef6; /* Set the hover color */
 }
