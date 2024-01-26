@@ -41,39 +41,3 @@
 .logo img {
   width: 100px;
 }
-
-
-.navBar {
-  background: linear-gradient(to bottom, #B9BFFF, #fff);
-  color: #fff;
-  font-size: 40px;
-}
-
-.navbar-nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0;
-  opacity: 0;
-  transition: opacity 3s ease-in-out;
-}
-
-.navbar-nav.fade-in {
-  opacity: 1;
-}
-
-.navbar-nav li {
-  flex: 1;
-  text-align: center;
-}
-
-.navbar-nav a {
-  color: #141443;
-  font-family: 'Raleway', bold, serif;
-  font-weight: bolder;
-}
-
-.navbar-nav a:hover {
-  color: #30bef6; /* Set the hover color */
-}
