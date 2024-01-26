@@ -1,0 +1,21 @@
+.p-overlay {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(234, 233, 240, 0.8); /* Semi-transparent white background */
+  max-width: 800px; /* Adjust the maximum width as needed */
+  text-align: center;
+  margin-top: 600px;
+  padding: 20px 20px 100px;
+  margin-bottom: 200px;
+}
+
+.p-overlay p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Raleway', bold, serif;
+  color: #141443;
+  font-weight: bold;
+  margin-top: 0;
+}

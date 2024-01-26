@@ -1,22 +1,107 @@
-.img-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.img-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.img-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+/* HomePage.css */
+body {
+    margin: 0;
+    padding: 0;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    pointer-events: none;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.push {
+    height: 100px; /* Adjust the height as needed */
+}
+
+.img-container {
+  position: relative;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.text-overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Adjust the margin-top and padding as needed */
+
+@media (min-width: 768px) {
+  /* Add media query for larger screens if needed */
+  .text-overlay {
+    margin-top: 50px;
+    padding: 30px;
+  }
+}
+
+form {
+    background-color: #eae9f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    font-size: 16px;
+    text-align: center;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+     width: 150px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for success message */
+.alert-success {
+    color: #28a745;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* Style for error message */
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
 }
