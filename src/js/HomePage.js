@@ -62,8 +62,8 @@ const HomePage = () => {
         <div>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-8" style={{background: "lightgray"}}>
-                        <Carousel>
+                    <div className="col-md-8" style={{background: "#cae5fa"}}>
+                        <Carousel fade>
                             <Carousel.Item>
                                 <img src={slide1} alt="slide1"/>
                             </Carousel.Item>
@@ -87,12 +87,12 @@ const HomePage = () => {
                             </Carousel.Item>
                         </Carousel>
                     </div>
-                    <div className="col-md-4" style={{background: "lightgray"}}>
-                        <Carousel style={{}}>
+                    <div className="col-md-4" style={{background: "#cae5fa"}}>
+                        <Carousel>
                             <Carousel.Item>
                                 <br/>
-                                <h1>Welcome to Pristine Clean Ventures LLC!</h1>
-                                <h4>We are a commercial and residential cleaning
+                                <h1 id="big-text" style={{textAlign: "center"}}>Welcome to Pristine Clean Ventures LLC!</h1>
+                                <h4 id="small-text">We are a commercial and residential cleaning
                                     company,
                                     servicing clients in Massachusetts and Connecticut, dedicated to providing
                                     exceptional cleaning services
@@ -102,7 +102,7 @@ const HomePage = () => {
                                     takes great pride in their
                                     work and goes above and beyond to exceed customer expectations. We understand the
                                     importance of a clean and healthy
-                                    environment, and we strive to create a space that is not only visually appealing but
+                                    environment, and we strive to create a space that is not onlyrea visually appealing but
                                     also free from allergens and bacteria.
                                     Customer satisfaction is at the heart of everything we do, and we work closely with
                                     our clients to understand their unique cleaning
@@ -114,33 +114,34 @@ const HomePage = () => {
                                     dedicated to delivering a cleaning experience that exceeds your expectations.
                                     Experience the difference with Pristine Clean Ventures.</h4>
                                 <br/>
+                                <h3 id="big-text" style={{textAlign: "center", color: "navy"}}>!!!PET FRIENDLY!!!</h3>
                                 <br/>
-                                <h3 style={{textAlign: "center", color: "navy"}}>!!!PET FRIENDLY!!!</h3>
+                                <br/>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <br/>
-                                <h1>Contact Information</h1>
+                                <h1  id="big-text" style={{textAlign: "center"}}>Contact Information</h1>
                                 <br/>
                                 <br/>
-                                <a href="https://www.facebook.com/profile.php?id=61554829619727" style={{fontSize: "50px"}}>
+                                <a href="https://www.facebook.com/profile.php?id=61554829619727" id="small-text" style={{fontSize: "50px"}}>
                                     <img src={facebook} alt="facebook" width={"50px"}/>
                                         Facebook
                                 </a>
                                 <br/>
                                 <br/>
-                                <h1>Phone: +1 860-265-8342</h1>
+                                <h1 id="small-text">Phone: +1 860-265-8342</h1>
                                 <br/>
                                 <br/>
-                                <h2>Email: PCcleaningcompany860@gmail.com</h2>
-
+                                <h2 id="small-text">Email: PCcleaningcompany860@gmail.com</h2>
+                                <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
                             </Carousel.Item>
                         </Carousel>
                     </div>
                 </div>
-                <div className="row justify-content-center">
-                    <div className="col-md-8 text-overlay">
-                        <h1 className="text-center" style={{margin: '20px auto'}}>Fill out the form to request a
-                            quote!</h1>
+                <div className="row justify-content-center" style={{background: "#cae5fa"}}>
+                    <div className="col-md-8 text-overlay" style={{background: "#cae5fa"}}>
+                        <h1 id="big-text" className="text-center" style={{margin: '20px auto'}}>Fill out the form to request more info!</h1>
+                        <h2 id="big-text" className="text-center" style={{margin: '20px auto'}}>10% off your first cleaning!</h2>
                         <form onSubmit={handleSubmit}>
                             <label>
                                 Name:
