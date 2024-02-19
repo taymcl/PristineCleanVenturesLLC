@@ -95,14 +95,14 @@ const HomePage = () => {
                                 <h4 id="small-text">We are a commercial and residential cleaning
                                     company,
                                     servicing clients in Massachusetts and Connecticut, dedicated to providing
-                                    exceptional cleaning services
-                                    to our clients. With a commitment to excellence and attention to detail, we ensure
+                                    exceptional cleaning services.
+                                    With a commitment to excellence and attention to detail, we ensure
                                     that every space we clean
                                     is left sparkling and spotless. Our team of highly skilled and trained professionals
                                     takes great pride in their
                                     work and goes above and beyond to exceed customer expectations. We understand the
                                     importance of a clean and healthy
-                                    environment, and we strive to create a space that is not onlyrea visually appealing but
+                                    environment, and we strive to create a space that is not only visually appealing but
                                     also free from allergens and bacteria.
                                     Customer satisfaction is at the heart of everything we do, and we work closely with
                                     our clients to understand their unique cleaning
