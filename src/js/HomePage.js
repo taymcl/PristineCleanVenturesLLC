@@ -88,60 +88,48 @@ const HomePage = () => {
                         </Carousel>
                     </div>
                     <div className="col-md-4" style={{background: "#cae5fa"}}>
-                        <Carousel>
-                            <Carousel.Item>
-                                <br/>
-                                <h1 id="big-text" style={{textAlign: "center"}}>Welcome to Pristine Clean Ventures LLC!</h1>
-                                <h4 id="small-text">We are a commercial and residential cleaning
-                                    company,
-                                    servicing clients in Massachusetts and Connecticut, dedicated to providing
-                                    exceptional cleaning services.
-                                    With a commitment to excellence and attention to detail, we ensure
-                                    that every space we clean
-                                    is left sparkling and spotless. Our team of highly skilled and trained professionals
-                                    takes great pride in their
-                                    work and goes above and beyond to exceed customer expectations. We understand the
-                                    importance of a clean and healthy
-                                    environment, and we strive to create a space that is not only visually appealing but
-                                    also free from allergens and bacteria.
-                                    Customer satisfaction is at the heart of everything we do, and we work closely with
-                                    our clients to understand their unique cleaning
-                                    needs and preferences. Whether you require maintenance cleaning, deep cleaning, or
-                                    specialized services, we tailor our approach to
-                                    meet your specific requirements. When you choose Pristine Clean Ventures, you can
-                                    trust that your space will receive the utmost care and attention.
-                                    We take pride in our professionalism, reliability, and efficiency, and we are
-                                    dedicated to delivering a cleaning experience that exceeds your expectations.
-                                    Experience the difference with Pristine Clean Ventures.</h4>
-                                <br/>
-                                <h3 id="big-text" style={{textAlign: "center", color: "navy"}}>!!!PET FRIENDLY!!!</h3>
-                                <br/>
-                                <br/>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <br/>
-                                <h1  id="big-text" style={{textAlign: "center"}}>Contact Information</h1>
-                                <br/>
-                                <br/>
-                                <a href="https://www.facebook.com/profile.php?id=61554829619727" id="small-text" style={{fontSize: "50px"}}>
-                                    <img src={facebook} alt="facebook" width={"50px"}/>
-                                        Facebook
-                                </a>
-                                <br/>
-                                <br/>
-                                <h1 id="small-text">Phone: +1 860-265-8342</h1>
-                                <br/>
-                                <br/>
-                                <h2 id="small-text">Email: PCcleaningcompany860@gmail.com</h2>
-                                <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
-                            </Carousel.Item>
-                        </Carousel>
+                        <div>
+                            <br/>
+                            <h1 id="big-text" style={{textAlign: "center"}}>Welcome to Pristine Clean Ventures LLC!</h1>
+                            <h4 id="small-text">We are a commercial and residential cleaning
+                                company,
+                                servicing clients in Massachusetts and Connecticut, dedicated to providing
+                                exceptional cleaning services.
+                                With a commitment to excellence and attention to detail, we ensure
+                                that every space we clean
+                                is left sparkling and spotless. Our team of highly skilled and trained professionals
+                                takes great pride in their
+                                work and goes above and beyond to exceed customer expectations. We understand the
+                                importance of a clean and healthy
+                                environment, and we strive to create a space that is not only visually appealing but
+                                also free from allergens and bacteria.
+                                Customer satisfaction is at the heart of everything we do, and we work closely with
+                                our clients to understand their unique cleaning
+                                needs and preferences. Whether you require maintenance cleaning, deep cleaning, or
+                                specialized services, we tailor our approach to
+                                meet your specific requirements. When you choose Pristine Clean Ventures, you can
+                                trust that your space will receive the utmost care and attention.
+                                We take pride in our professionalism, reliability, and efficiency, and we are
+                                dedicated to delivering a cleaning experience that exceeds your expectations.
+                                Experience the difference with Pristine Clean Ventures.</h4>
+                            <br/>
+                            <br/>
+                            <h3 id="big-text" style={{textAlign: "center", color: "navy"}}>As always, no extra charge for furry friends!</h3>
+                            <br/>
+                            <br/>
+                        </div>
                     </div>
                 </div>
                 <div className="row justify-content-center" style={{background: "#cae5fa"}}>
-                    <div className="col-md-8 text-overlay" style={{background: "#cae5fa"}}>
+                    <div className="col-md-8 text-overlay" style={{background: "#cae5fa", textAlign: "center"}}>
+                        <h1  id="big-text" style={{textAlign: "center"}}>Contact Information and Social Media</h1>
+                        <a href="https://www.facebook.com/profile.php?id=61554829619727" id="small-text" style={{fontSize: "50px", justifyContent: "center"}}>
+                            <img src={facebook} alt="facebook" width={"50px"}/>
+                            Facebook
+                        </a>
+                        <h1 id="small-text">Phone: +1 860-265-8342</h1>
+                        <h1 id="small-text">Email: PCcleaningcompany860@gmail.com</h1>
                         <h1 id="big-text" className="text-center" style={{margin: '20px auto'}}>Fill out the form to request more info!</h1>
-                        <h2 id="big-text" className="text-center" style={{margin: '20px auto'}}>10% off your first cleaning!</h2>
                         <form onSubmit={handleSubmit}>
                             <label>
                                 Name:

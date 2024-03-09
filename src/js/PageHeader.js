@@ -12,7 +12,7 @@ const PageHeader = () => {
     return (
         <div>
             <div className="header">
-                <h1 className="name">Pristine Clean Ventures LLC</h1>
+                <h1 className="name">PRISTINE CLEAN VENTURES LLC</h1>
                 <h2 className="slogan">"A refreshing touch of Pristine Clean awaits..."</h2>
                 <div className="logo">
                     <img src={logo_image} alt="logo"/>

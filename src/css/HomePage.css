@@ -108,8 +108,10 @@ button:hover {
 
 #big-text {
     font-family: 'Josefin Slab', serif;
+    text-align: center;
 }
 
 #small-text {
     font-family: 'Diphylleia', serif;
+    text-align: center;
 }
