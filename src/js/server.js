@@ -18,14 +18,14 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post('/api/send-email', async (req, res) => {
-  const { name, email, phone, address, propertyType, bedrooms, bathrooms, sqFootage, offices } = req.body;
+  const { name, email, phone, address, propertyType, bedrooms, bathrooms, sqFootage, offices, comment} = req.body;
 
   let message = `New Request!\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nAddress: ${address}\nProperty Type: ${propertyType}\n`;
 
    if (propertyType === 'residential') {
-    message += `Bedrooms: ${bedrooms}\nBathrooms: ${bathrooms}\nSquare Footage: ${sqFootage}\n`;
+    message += `Bedrooms: ${bedrooms}\nBathrooms: ${bathrooms}\nSquare Footage: ${sqFootage}\nAdditional Comment: ${comment}\n`;
   } else if (propertyType === 'office') {
-    message += `Offices: ${offices}\nBathrooms: ${bathrooms}\nSquare Footage: ${sqFootage}\n`;
+    message += `Offices: ${offices}\nBathrooms: ${bathrooms}\nSquare Footage: ${sqFootage}\nAdditional Comment: ${comment}\n`;
   }
 
   const mailOptions = {

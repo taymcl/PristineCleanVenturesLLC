@@ -25,6 +25,7 @@ const HomePage = () => {
             sqFootage: '',
             offices: '',
         },
+        comment: '',
     });
 
     const handleChange = (e) => {
@@ -61,6 +62,7 @@ const HomePage = () => {
                     address: formData.address,
                     propertyType: formData.propertyType,
                     ...formData.additionalFields,
+                    comment: formData.comment,
                 }),
             });
 
@@ -77,6 +79,7 @@ const HomePage = () => {
                         sqFootage: '',
                         offices: '',
                     },
+                    comment: '',
                 });
                 alert('Form submitted successfully. We will reach out to you soon.');
             } else {
@@ -273,6 +276,15 @@ const HomePage = () => {
                                     </label>
                                 </>
                             )}
+                            <label>
+                                Additional Comments:
+                                   <input
+                                    type="text"
+                                    name="comment"
+                                    value={formData.comment}
+                                    onChange={handleChange}
+                                    />
+                            </label>
                             <button type="submit">Submit</button>
                         </form>
                     </div>
