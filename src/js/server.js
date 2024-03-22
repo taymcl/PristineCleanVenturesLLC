@@ -18,19 +18,21 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post('/api/send-email', async (req, res) => {
-  const { name, email, phone, propertyType, message } = req.body;
+  const { name, email, phone, address, propertyType, bedrooms, bathrooms, sqFootage, offices } = req.body;
+
+  let message = `New Request!\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nAddress: ${address}\nProperty Type: ${propertyType}\n`;
+
+   if (propertyType === 'residential') {
+    message += `Bedrooms: ${bedrooms}\nBathrooms: ${bathrooms}\nSquare Footage: ${sqFootage}\n`;
+  } else if (propertyType === 'office') {
+    message += `Offices: ${offices}\nBathrooms: ${bathrooms}\nSquare Footage: ${sqFootage}\n`;
+  }
 
   const mailOptions = {
     from: 'your-email@gmail.com',
     to: 'taylormclean0813@gmail.com', // Replace with the recipient's email
-    subject: 'New Form Submission',
-    text: `
-      Name: ${name}
-      Email: ${email}
-      Phone: ${phone}
-      Property Type: ${propertyType}
-      Message: ${message}
-    `,
+    subject: 'New Form Submission!',
+    text: message,
   };
 
   try {
