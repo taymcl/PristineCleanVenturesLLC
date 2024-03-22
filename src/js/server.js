@@ -6,14 +6,18 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors({
+  origin: '*', // Allow requests from any origin, update this according to your requirements
+  methods: ['POST'], // Allow only POST requests
+  allowedHeaders: ['Content-Type'], // Allow only specified headers
+}));
 app.use(bodyParser.json());
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'taylormclean0813@gmail.com', // Replace with your Gmail email
-    pass: 'hktj xsij cgbo ykjg', // Replace with your Gmail password
+    user: process.env.EMAIL_USER, // Use environment variable
+    pass: process.env.EMAIL_PASS, // Use environment variable
   },
 });
 

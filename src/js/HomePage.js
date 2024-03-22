@@ -287,6 +287,8 @@ const HomePage = () => {
                             </label>
                             <button type="submit">Submit</button>
                         </form>
+                        <br/>
+                        <br/>
                     </div>
                 </div>
             </div>
