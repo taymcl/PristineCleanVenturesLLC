@@ -6,11 +6,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({
-  origin: '*', // Allow requests from any origin, update this according to your requirements
-  methods: ['POST'], // Allow only POST requests
-  allowedHeaders: ['Content-Type'], // Allow only specified headers
-}));
+app.use(cors);
 app.use(bodyParser.json());
 
 const transporter = nodemailer.createTransport({
