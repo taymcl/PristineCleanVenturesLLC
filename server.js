@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
 app.use(cors({
   origin: '*', // Allow requests from any origin, update this according to your requirements
