@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const PORT = 5000;
-const HOST = 'pristine-clean-ventures-app-rwe52.ondigitalocean.app';
 
 app.route("/").get(function (req, res) {
   res.redirect("/public/index.html");
@@ -53,6 +52,6 @@ app.post('/api/send-email', async (req, res) => {
   }
 });
 
-app.listen(PORT, HOST, () => {
-  console.log(`Server is running on https://${HOST}:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
