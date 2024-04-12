@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
 app.route("/").get(function (req, res) {
   res.redirect("/public/index.html");
