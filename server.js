@@ -6,9 +6,6 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = 5000;
 
-app.route("/").get(function (req, res) {
-  res.redirect("/public/index.html");
-});
 
 app.use(cors({
   origin: '*', // Allow requests from any origin, update this according to your requirements
