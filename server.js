@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const PORT = 5000;
+const HOST = 'pristine-clean-ventures-app-rwe52.ondigitalocean.app';
 
 
 app.use(cors({
@@ -49,6 +50,6 @@ app.post('/api/send-email', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(PORT, HOST, () => {
+  console.log(`Server is running on https://${HOST}:${PORT}`);
 });
