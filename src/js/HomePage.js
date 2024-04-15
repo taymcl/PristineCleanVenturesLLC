@@ -50,7 +50,7 @@ const HomePage = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('/api/send-email', {
+            const response = await fetch(process.env.REACT_APP_API_URL, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -161,7 +161,7 @@ const HomePage = () => {
                             <img src={facebook} alt="facebook" width={"50px"}/>
                             Facebook
                         </a>
-                        <h1 id="small-text">Phone: +1 860-265-8342</h1>
+                        <h1 id="small-text">Phone: +1 860-735-3618</h1>
                         <h1 id="small-text">Email: PCcleaningcompany860@gmail.com</h1>
                         <h1 id="big-text" className="text-center" style={{margin: '20px auto'}}>Fill out the form to
                             request more info!</h1>
